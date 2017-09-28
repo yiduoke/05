@@ -1,0 +1,22 @@
+<!DOCTYPE.html>
+<html>
+    <head>
+        <title>Occupations</title>
+    </head>
+
+    <body>
+        <table>
+            <tr>
+                <th>{{ header1 }}</th>
+                <th>{{ header2 }}</th>
+            </tr>
+            {% for key in dict %}
+            <tr>
+                <td>{{ key }}</td>
+                <td>{{ dict[key] }}</td>
+            </tr>
+            {% endfor %}
+        </table>
+        {{ randomJob }}
+    </body>
+</html>
